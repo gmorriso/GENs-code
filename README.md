@@ -60,33 +60,57 @@ EXAMPLE (valid on Mac and Linux)
 When the code finishes you should see this output in the terminal:
 
 Constructing theNetwork
+
 Reading Unweighted Edges File [example.txt]
+
 removeRedundantEdges()
+
 organizeNodes()
+
 initNodeToEdgesMap()
+
 initConnectivity()
+
 	# Nodes: 512
+
 	# Edges: 7701
+
 Computing GENs
+
 	GENs -> 511/511
+
 GENs Converged
+
 Find Friends
+
 Build FPs
+
 Build Fine-Grained Communities: 17 Found
+
 Repair Fractured Fine-Grained Communities: 16 Final
+
 Build Coarse-Grained Communities:
+
 	# communities at tier 0: 16
+	
 	# communities at tier 1: 4
+	
 	# communities at tier 2: 1
+
 Writing Output Files
 
 And you should see 5 new files in the directory:
 
 example_GENs.txt (each row corresponds to a node and contains N entries, each of which is a GEN describing how close that column node feels to the row node)
+
 example_OrderedEdges.txt (in the same format as example.txt, but the nodes have been renamed based on their order in the community hierarchy)
+
 example_CommunityTier_0.txt (each row contains the nodes in a community)
+
 example_CommunityTier_1.txt
+
 example_CommunityTier_2.txt
+
 
 Please report bugs / send comments or questions to ldudte@seas.harvard.edu and gcmorrison@uh.edu. Suggestions for improvement very welcome!
 
