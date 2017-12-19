@@ -14,6 +14,7 @@ g++ ./*.cpp -O3 -o network
 
 ./network example.txt u
 
+-------------------------------------------------
 
 
 In general, to run the algorithm:
@@ -28,6 +29,9 @@ Three file types will be output in the same directory as the network file:
 [network file]_GENs.txt (the closeness between nodes)
 [network file]_OrderedEdges.txt (re-ordering the nodes into the detected community structure)
 [network file]_CommunityTier_[i].txt (a set of files each corresponding to a tier of the hierarchical community structure: fine-grained communities @ i = 0, entire network @ i = # tiers - 1)  
+
+-------------------------------------------------
+
 
 Detailed summary:
 
