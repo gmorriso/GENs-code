@@ -9,13 +9,19 @@ Executive summary:
 This source code will run the GENs community detection algorithm on a variety of file types.  The algorithm outputs the GENs as well as the community structure at varying levels of hierarchy.  
 
 To run the algorithm on the provided example, run on the command line:
+
 g++ ./*.cpp -O3 -o network
+
 ./network example.txt u
+
+
 
 In general, to run the algorithm:
 
 (1)  Store the network in a tab-delimited .txt file.
+
 (2)  Cd to the code directory and type "g++ ./*.cpp -O3 -o network" (to generate an executable called "network")
+
 (3)  Type "./network [network file] [network file type]" to analyze the network, where the network file type is: 'u' for an unweighted edges file, 'w' for a weighted edges file, 'a' for NxN weight matrix
 
 Three file types will be output in the same directory as the network file: 
